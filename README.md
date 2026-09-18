@@ -56,6 +56,7 @@ question.
 
 The plugin sends your tool calls (model names, filters, token counts) to the InferIndex API to answer them. It
 doesn't send your conversation or code. See the [InferIndex privacy policy](https://api.inferindex.dev/privacy).
+Use of the service is subject to the [InferIndex terms of use](https://api.inferindex.dev/terms).
 
 ## Support
 
