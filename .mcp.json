@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "inferindex": {
+      "type": "http",
+      "url": "https://mcp.inferindex.dev/mcp"
+    }
+  }
+}

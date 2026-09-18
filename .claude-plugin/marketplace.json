@@ -1,0 +1,15 @@
+{
+  "name": "inferindex",
+  "description": "InferIndex plugin: live LLM API prices, provider comparison and cost estimates.",
+  "owner": {
+    "name": "InferIndex",
+    "email": "contact@inferindex.dev"
+  },
+  "plugins": [
+    {
+      "name": "inferindex",
+      "source": "./",
+      "description": "Compare LLM API prices across 70+ providers: cheapest offer, provider comparison, price history and cost estimates."
+    }
+  ]
+}

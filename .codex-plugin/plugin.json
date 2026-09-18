@@ -1,0 +1,34 @@
+{
+  "name": "inferindex",
+  "version": "1.0.0",
+  "description": "Compare LLM API prices across 70+ providers and aggregators: cheapest offer for a model, provider comparison with usage conditions, price history and cost estimates.",
+  "author": {
+    "name": "InferIndex",
+    "email": "contact@inferindex.dev",
+    "url": "https://inferindex.dev"
+  },
+  "homepage": "https://inferindex.dev",
+  "repository": "https://github.com/InferIndex/inferindex-plugin",
+  "license": "MIT",
+  "keywords": ["llm", "pricing", "api", "cost", "inference", "mcp"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "InferIndex",
+    "shortDescription": "Live LLM API prices and cost estimates",
+    "longDescription": "Find the cheapest provider for an LLM model, compare every provider with its usage conditions and reliability, estimate what a workload will cost per request and per month, and check how a price moved. Answers come from live InferIndex data, with the API call behind each number.",
+    "developerName": "InferIndex",
+    "category": "Developer Tools",
+    "capabilities": ["Read"],
+    "websiteURL": "https://inferindex.dev",
+    "privacyPolicyURL": "https://api.inferindex.dev/privacy",
+    "defaultPrompt": [
+      "Which provider is cheapest for DeepSeek V3.2 right now?",
+      "Estimate the monthly cost of 1,000 requests a day with 2,000 input and 500 output tokens on gpt-oss-120b",
+      "Compare providers for Llama 3.3 70B that process requests in the EU"
+    ],
+    "composerIcon": "./assets/icon-400.png",
+    "logo": "./assets/icon-400.png",
+    "screenshots": []
+  }
+}

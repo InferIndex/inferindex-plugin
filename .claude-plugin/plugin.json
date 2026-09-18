@@ -1,0 +1,15 @@
+{
+  "name": "inferindex",
+  "displayName": "InferIndex",
+  "version": "1.0.0",
+  "description": "Compare LLM API prices across 70+ providers and aggregators: cheapest offer for a model, provider comparison with usage conditions, price history and cost estimates.",
+  "author": {
+    "name": "InferIndex",
+    "email": "contact@inferindex.dev",
+    "url": "https://inferindex.dev"
+  },
+  "homepage": "https://inferindex.dev",
+  "repository": "https://github.com/InferIndex/inferindex-plugin",
+  "license": "MIT",
+  "keywords": ["llm", "pricing", "api", "cost", "inference", "mcp"]
+}

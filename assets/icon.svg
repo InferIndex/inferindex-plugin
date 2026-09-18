@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="InferIndex">
+  <rect width="400" height="400" fill="#101B21"/>
+  <g fill="none" stroke-width="17" stroke-linecap="butt" stroke-linejoin="round">
+    <path d="M80 92v24c0 20 18 28 52 42 25 12 34 27 34 47v9" stroke="#C8F36B"/>
+    <path d="M320 92v24c0 20-18 28-52 42-25 12-34 27-34 47v9" stroke="#C8F36B"/>
+    <path d="M65 178l61 18c19 6 26 20 26 34v12" stroke="#6A7980"/>
+    <path d="M335 178l-61 18c-19 6-26 20-26 34v12" stroke="#6A7980"/>
+    <path d="M65 305l61-20c27-9 39-26 39-42v-7" stroke="#F1F2EC"/>
+    <path d="M335 305l-61-20c-27-9-39-26-39-42v-7" stroke="#F1F2EC"/>
+  </g>
+  <rect x="188" y="72" width="24" height="256" fill="#F1F2EC"/>
+</svg>
