@@ -10,7 +10,14 @@
   "homepage": "https://inferindex.dev",
   "repository": "https://github.com/InferIndex/inferindex-plugin",
   "license": "MIT",
-  "keywords": ["llm", "pricing", "api", "cost", "inference", "mcp"],
+  "keywords": [
+    "llm",
+    "pricing",
+    "api",
+    "cost",
+    "inference",
+    "mcp"
+  ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
@@ -19,9 +26,12 @@
     "longDescription": "Find the cheapest provider for an LLM model, compare every provider with its usage conditions and reliability, estimate what a workload will cost per request and per month, and check how a price moved. Answers come from live InferIndex data, with the API call behind each number.",
     "developerName": "InferIndex",
     "category": "Developer Tools",
-    "capabilities": ["Read"],
+    "capabilities": [
+      "Read"
+    ],
     "websiteURL": "https://inferindex.dev",
     "privacyPolicyURL": "https://api.inferindex.dev/privacy",
+    "termsOfServiceURL": "https://api.inferindex.dev/terms",
     "defaultPrompt": [
       "Which provider is cheapest for DeepSeek V3.2 right now?",
       "Estimate the monthly cost of 1,000 requests a day with 2,000 input and 500 output tokens on gpt-oss-120b",
