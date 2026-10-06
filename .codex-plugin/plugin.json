@@ -1,7 +1,7 @@
 {
   "name": "inferindex",
   "version": "1.0.0",
-  "description": "Compare LLM API prices across 70+ providers and aggregators: cheapest offer for a model, provider comparison with usage conditions, price history and cost estimates.",
+  "description": "Compare LLM API prices across 150+ providers and aggregators: cheapest offer for a model, provider comparison with usage conditions, price history and cost estimates.",
   "author": {
     "name": "InferIndex",
     "email": "contact@inferindex.dev",
