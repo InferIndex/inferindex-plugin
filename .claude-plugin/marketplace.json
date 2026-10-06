@@ -9,7 +9,7 @@
     {
       "name": "inferindex",
       "source": "./",
-      "description": "Compare LLM API prices across 70+ providers: cheapest offer, provider comparison, price history and cost estimates."
+      "description": "Compare LLM API prices across 150+ providers: cheapest offer, provider comparison, price history and cost estimates."
     }
   ]
 }
