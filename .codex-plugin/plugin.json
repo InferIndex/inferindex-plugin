@@ -1,7 +1,7 @@
 {
   "name": "inferindex",
-  "version": "1.0.0",
-  "description": "Compare LLM API prices across 150+ providers and aggregators: cheapest offer for a model, provider comparison with usage conditions, price history and cost estimates.",
+  "version": "1.1.0",
+  "description": "Compare LLM API prices across 150+ providers and aggregators: cheapest offer, provider comparison, price history, cost estimates, and whether self-hosting on rented GPUs beats the API.",
   "author": {
     "name": "InferIndex",
     "email": "contact@inferindex.dev",
@@ -22,8 +22,8 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "InferIndex",
-    "shortDescription": "Live LLM API prices and cost estimates",
-    "longDescription": "Find the cheapest provider for an LLM model, compare every provider with its usage conditions and reliability, estimate what a workload will cost per request and per month, and check how a price moved. Answers come from live InferIndex data, with the API call behind each number.",
+    "shortDescription": "Compare LLM API prices across providers, and check if self-hosting on rented GPUs beats the API.",
+    "longDescription": "Find the cheapest provider for an LLM model, compare every provider with its usage conditions and reliability, estimate what a workload will cost per request and per month, and check how a price moved. Also estimates whether renting GPUs to run an open model beats the API, from published benchmarks and rental prices (hardware rental only). Answers come from live InferIndex data, with the API call behind each number.",
     "developerName": "InferIndex",
     "category": "Developer Tools",
     "capabilities": [
@@ -35,7 +35,7 @@
     "defaultPrompt": [
       "Which provider is cheapest for DeepSeek V3.2 right now?",
       "Estimate the monthly cost of 1,000 requests a day with 2,000 input and 500 output tokens on gpt-oss-120b",
-      "Compare providers for Llama 3.3 70B that process requests in the EU"
+      "Is it cheaper to self-host Qwen3.8 27B than to use an API?"
     ],
     "composerIcon": "./assets/icon-400.png",
     "logo": "./assets/icon-400.png",
