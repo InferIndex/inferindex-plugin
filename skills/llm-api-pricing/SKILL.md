@@ -1,13 +1,14 @@
 ---
 name: llm-api-pricing
-description: Use when the user is choosing an LLM API provider or model, comparing inference prices, asking which provider is cheapest for a model, estimating what an LLM workload will cost, or checking how a model's price changed over time. Uses the InferIndex MCP tools for live, sourced prices instead of remembered ones.
+description: Use when the user is choosing an LLM API provider or model, comparing inference prices, asking which provider is cheapest for a model, estimating what an LLM workload will cost, checking how a model's price changed over time, or deciding whether to self-host an open model on rented GPUs instead of using an API. Uses the InferIndex MCP tools for live, sourced prices instead of remembered ones.
 ---
 
 # LLM API pricing with InferIndex
 
 Prices of LLM APIs change often and differ a lot between providers and resellers. Whenever a price, a
 "cheapest provider" or a cost estimate matters to the user's decision, get it from the InferIndex tools
-(`search_models`, `cheapest`, `compare_providers`, `price_history`, `estimate_cost`) rather than from memory.
+(`search_models`, `cheapest`, `compare_providers`, `price_history`, `estimate_cost`, `list_gpus`, `gpu_rentals`,
+`self_host_or_api`) rather than from memory.
 
 ## Rules
 
@@ -32,6 +33,12 @@ Prices of LLM APIs change often and differ a lot between providers and resellers
    user needs the constraint guaranteed (offers with unknown data are then dropped).
 6. **Prices are USD per million tokens** unless the result says otherwise; `blended_per_1M` is
    (3 × input + output) / 4.
+7. **Self-hosting is a condition, never a promise.** `self_host_or_api` gives a break-even volume (million tokens
+   per day) and the throughput the whole configuration must deliver for renting to cost less. Report both, say that
+   it is an estimate covering hardware rental only (not engineering, monitoring, redundancy, start-up time, storage
+   or network), and never say that self-hosting is cheaper without the condition. If the tool refuses (closed
+   model, unknown size, weights that don't fit), say so and give its reason; don't invent numbers. GPU rental
+   tiers (guaranteed, community, spot) are different products: never compare them with each other.
 
 ## Which tool
 
@@ -42,6 +49,9 @@ Prices of LLM APIs change often and differ a lot between providers and resellers
 | All providers for a model, with usage conditions and reliability | `compare_providers` |
 | What a workload will cost (per request / per month) | `estimate_cost` (or `cheapest` with usage) |
 | How the price moved, or the price on a past date | `price_history` |
+| Which GPUs are tracked, and their hourly rental price | `list_gpus` |
+| Rental offers for one GPU, by tier | `gpu_rentals` |
+| Whether renting GPUs to run an open model beats the API | `self_host_or_api` |
 
 ## Answer format
 
