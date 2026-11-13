@@ -7,7 +7,7 @@ description: Use when the user is choosing an LLM API provider or model, compari
 
 Prices of LLM APIs change often and differ a lot between providers and resellers. Whenever a price, a
 "cheapest provider" or a cost estimate matters to the user's decision, get it from the InferIndex tools
-(`search_models`, `cheapest`, `compare_providers`, `price_history`, `estimate_cost`, `list_gpus`, `gpu_rentals`,
+(`search_models`, `cheapest`, `compare_providers`, `price_history`, `estimate_cost`, `provider_ranking`, `list_gpus`, `gpu_rentals`,
 `self_host_or_api`) rather than from memory.
 
 ## Rules
@@ -49,6 +49,7 @@ Prices of LLM APIs change often and differ a lot between providers and resellers
 | All providers for a model, with usage conditions and reliability | `compare_providers` |
 | What a workload will cost (per request / per month) | `estimate_cost` (or `cheapest` with usage) |
 | How the price moved, or the price on a past date | `price_history` |
+| Which providers are cheapest across the market overall | `provider_ranking` |
 | Which GPUs are tracked, and their hourly rental price | `list_gpus` |
 | Rental offers for one GPU, by tier | `gpu_rentals` |
 | Whether renting GPUs to run an open model beats the API | `self_host_or_api` |
