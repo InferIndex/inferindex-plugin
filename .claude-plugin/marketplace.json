@@ -9,7 +9,7 @@
     {
       "name": "inferindex",
       "source": "./",
-      "description": "Compare LLM API prices across 150+ providers and aggregators: cheapest offer, provider comparison, price history, cost estimates, and whether self-hosting on rented GPUs beats the API."
+      "description": "Compare LLM API prices across 100+ providers and aggregators: cheapest offer, provider comparison, price history, cost estimates, and whether self-hosting on rented GPUs beats the API."
     }
   ]
 }
