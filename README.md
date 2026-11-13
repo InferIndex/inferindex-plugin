@@ -8,12 +8,13 @@ whether renting GPUs to run an open model beats paying an API — your assistant
 ## What's included
 
 - **MCP server** `inferindex` — the remote InferIndex server at `https://mcp.inferindex.dev/mcp` (read-only, no
-  API key needed). Eight tools:
+  API key needed). Tools:
   - `search_models` — Search models: find the exact id of a model.
   - `cheapest` — Cheapest offers for a model: cheapest current offers, with filters and signals.
   - `compare_providers` — Compare providers for a model: one line per provider and reseller, with region and conditions.
   - `price_history` — Price history of a model: how prices moved over time, plus the lab's official price.
   - `estimate_cost` — Estimate the cost of a workload: cost per request and per month.
+  - `provider_ranking` — Providers ranked by price gap: each provider's median gap to the market price, and the number of models where it holds the cheapest offer.
   - `list_gpus` — GPU types tracked for rental prices: lowest hourly price per GPU, by tier.
   - `gpu_rentals` — Rental offers for one GPU, by tier: hourly rental prices, tiers never compared with each other.
   - `self_host_or_api` — Self-host an open model or use the API?: break-even volume and the throughput a rented
